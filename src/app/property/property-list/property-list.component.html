@@ -1,0 +1,83 @@
+
+
+<!-- 
+    <div class="row">
+        <div class="col-8">
+         <p id="PTitle">Demad Properties</p>
+         <p id="PDesc">The most searched layouts from Hyderabad</p>
+          <div class="row" *ngFor="let property of demandPropertyList" style="margin-bottom: 20px;">
+            <div class="col-sm-12 col-md-12 col-lg-4"><div  >
+
+                <app-property-item [propertyItem]="property"></app-property-item>
+            </div></div>
+            <div class="col-sm-12 col-md-12 col-lg-4" style="margin-left: 60px;">
+                <div>
+
+                <app-property-item [propertyItem]="property"></app-property-item>
+                </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+            <p id="PTitle">Popular Properties</p>
+            <p id="PDesc">The most Popular layouts from Hyderabad</p>
+
+            <div class="row" *ngFor="let property of recPropertyList">
+                <div class="col-sm-12 col-md-12 col-lg-4"><div>
+    
+                    <app-property-item [propertyItem]="property"></app-property-item>
+                </div></div>
+            </div>    
+        </div>
+      </div>
+ -->
+
+
+
+<div class="container-fluid">
+    <!-- <h1>Hello World!</h1>
+    <p>Resize the browser window to see the effect.</p> -->
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8" style="background-color:lavender;">Demand
+        <div class="row" *ngFor="let property of demandPropertyList" style="margin-bottom: 20px;">
+          <div class="col-sm-12 col-md-12 col-lg-6" style="background-color:lightcyan;">
+            <app-property-item [propertyItem]="property"></app-property-item>
+          </div>
+           <!-- <div class="col-sm-12 col-md-12 col-lg-4" style="background-color:lightcyan;">
+            <app-property-item [propertyItem]="property"></app-property-item>
+          </div> -->
+          
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4" style="background-color:lavenderblush;">Popular
+    
+        <div class="row" *ngFor="let property of demandPropertyList" style="margin-bottom: 20px;">
+            <div class="col-sm-12 col-md-12 col-lg-4" style="background-color:lightcyan;">
+              <app-property-item [propertyItem]="property"></app-property-item>
+            </div>
+           
+            
+            <!-- <div class="col-sm-12 col-md-12 col-lg-6" style="background-color:lightgray;">.col-sm-6</div> -->
+          </div>
+
+
+    </div>
+    </div>
+  </div>
+
+<!-- 
+
+  <div class="row" *ngFor="let property of demandPropertyList" style="margin-bottom: 20px;">
+    <div class="col-sm-12 col-md-12 col-lg-4"><div  >
+
+        <app-property-item [propertyItem]="property"></app-property-item>
+    </div></div>
+    <div class="col-sm-12 col-md-12 col-lg-4" style="margin-left: 60px;">
+        <div>
+
+        <app-property-item [propertyItem]="property"></app-property-item>
+        </div>
+    </div>
+  </div>
+ -->
